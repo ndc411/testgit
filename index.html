@@ -26,11 +26,13 @@
 
 <header>
     <nav class="nav-top">
-        <a href="/index/"><div class="logo"></div></a>
+        <a href="/index/">
+            <div class="logo"></div>
+        </a>
         <div class="nav-top-link">
             <a href="#">核心技术</a>
             <div class="has-menu">
-                <a href="#" id="industry-solu">行业解决方案</a>
+                <a href="#" id="industry-solu">核心技术</a>
                 <div class="menu">
                     <div class="menu-content">
                         <div class="menu-block">
@@ -58,31 +60,33 @@
                     </div>
                 </div>
             </div>
-            <a href="/coopCase/">典型案例</a>
+            <a href="/coopCase/">互联网态势</a>
             <a href="/postNews/">媒体动态</a>
-            <a href="/aboutUs/">关于我们</a>
-            <a href="http://hr.sensetime.com">加入我们</a>
+            <a href="/aboutUs/">我们的愿景</a>
+            <a href="http://hr.sensetime.com">和我们创业</a>
         </div>
     </nav>
 </header>
 
 <!--<div id="prePage"class="before-over">-->
-    <!--<audio src="./va/victory.mp3" autoplay="autoplay" loop="loop">-->
-        <!--您的浏览器不支持音频-->
-    <!--</audio>-->
+<!--<audio src="./va/victory.mp3" autoplay="autoplay" loop="loop">-->
+<!--您的浏览器不支持音频-->
+<!--</audio>-->
 <!--</div>-->
 <div id="content">
-    <div class="bg_img" id="header" >
+    <div class="bg_img" id="header">
         <a id="banner-title" class="title">专注于计算机视觉和深度学习</a>
         <div class="title sub-title">未来网络，先睹为快</div>
         <div class="indicators">
             <div class="indicator indicator-default" id="indicator0"></div>
             <div class="indicator" id="indicator1"></div>
         </div>
-        <video id="banner0" class="player" preload="auto" onended="onPlayOver(1)" poster="./imgs/test/index/banner1.jpg">
+        <video id="banner0" class="player" preload="auto" onended="onPlayOver(1)"
+               poster="./imgs/test/index/banner1.jpg">
             <source type="video/mp4" src="./va/banner1.mp4">
         </video>
-        <video id="banner1" class="player" preload="auto" onended="onPlayOver(0)" poster="./imgs/test/index/banner2.jpg">
+        <video id="banner1" class="player" preload="auto" onended="onPlayOver(0)"
+               poster="./imgs/test/index/banner2.jpg">
             <source type="video/mp4" src="./va/banner2.mp4">
         </video>
         <div id="black"></div>
@@ -93,7 +97,7 @@
     <div class="footer-wrap">
         <div class="footer-content">
             @2016-2017 MeetOne All Rights Reserverd.
-            <br />
+            <br/>
             米特尼工作室
         </div>
     </div>
@@ -106,71 +110,70 @@
 <script src="./js/video-loop.js"></script>
 <script src="./js/menu.js"></script>
 <script>
-    var sr = ScrollReveal()
-    sr.reveal('.coop-friend', {
-        duration: 1000,
-        delay: 100
-    })
-    sr.reveal('.solution', {
-        duration: 1000,
-        delay: 300
-    })
-    function adaptHeader() {
-        var height = $(window).height() - 100;
-        if (height < 521) height = 521;
-        var loadingh = height + 100;
-        loadingh += 'px';
-        height += "px";
-        $('#header').css({'height': height, 'line-height': height});
-        $('.all-container').css({'height': loadingh});
-    }
-
-    var vid = document.getElementById("banner0");
-    vid.oncanplaythrough = function () {
-        $('#banner0')[0].play();
-    };
-
-    disableScroll();
-    var loading = new Image;
-    loading.onload = function () {
-        setTimeout(function () {
-            $("#prePage").animate({'opacity': 0, 'z-index': -1}, 3000);
-            enableScroll();
-        }, 1500);
-    };
-    loading.src = "./imgs/test/index/banner1.jpg";
-
-    $(document).ready(function () {
-        adaptHeader();
-
-        $(window).resize(function () {
-            adaptHeader();
-        });
-
-
-        // $(".solution").hover(
-        //         function () {
-        //             var id = $(this).attr('id');
-        //             $(this).find('.icon-normal').stop().animate({'opacity': 0}, 500);
-        //             $(this).find('.icon-highlight').stop().animate({'opacity': 1}, 500);
-        //             $(this).stop().animate({'background-color': '#222222'}, 500);
-        //             $(this).find('.text').stop().animate({'color': '#ffffff'}, 500);
-        //         },
-        //         function () {
-        //             var id = $(this).attr('id');
-        //             $(this).find('.icon-normal').stop().animate({'opacity': 1}, 500);
-        //             $(this).find('.icon-highlight').stop().animate({'opacity': 0}, 500);
-        //             $(this).stop().animate({'background-color': '#ffffff'}, 500);
-        //             $(this).find('.text').stop().animate({'color': '#898989'}, 500);
-        //         }
-        // );
-
-        $(window).scrollTop(0);
-        if ('scrollRestoration' in history) {
-            // Back off, browser, I got this...
-            history.scrollRestoration = 'manual';
+        var sr = ScrollReveal()
+        sr.reveal('.coop-friend', {
+            duration: 1000,
+            delay: 100
+        })
+        sr.reveal('.solution', {
+            duration: 1000,
+            delay: 300
+        })
+        function adaptHeader() {
+            var height = $(window).height() - 100;
+            if (height < 521) height = 521;
+            var loadingh = height + 100;
+            loadingh += 'px';
+            height += "px";
+            $('#header').css({'height': height, 'line-height': height});
+            $('.all-container').css({'height': loadingh});
         }
-    });
+
+        disableScroll();
+        var loading = new Image;
+        loading.onload = function () {
+            setTimeout(function () {
+                $("#prePage").animate({'opacity': 0, 'z-index': -1}, 3000);
+                enableScroll();
+            }, 3500);
+        };
+        loading.src = "./imgs/test/index/banner1.jpg";
+
+        $(document).ready(function () {
+            adaptHeader();
+
+            $(window).resize(function () {
+                adaptHeader();
+            });
+
+            var vid = document.getElementById("banner0");
+            vid.oncanplaythrough = function () {
+                $('#banner0')[0].play();
+            };
+
+            // $(".solution").hover(
+            //         function () {
+            //             var id = $(this).attr('id');
+            //             $(this).find('.icon-normal').stop().animate({'opacity': 0}, 500);
+            //             $(this).find('.icon-highlight').stop().animate({'opacity': 1}, 500);
+            //             $(this).stop().animate({'background-color': '#222222'}, 500);
+            //             $(this).find('.text').stop().animate({'color': '#ffffff'}, 500);
+            //         },
+            //         function () {
+            //             var id = $(this).attr('id');
+            //             $(this).find('.icon-normal').stop().animate({'opacity': 1}, 500);
+            //             $(this).find('.icon-highlight').stop().animate({'opacity': 0}, 500);
+            //             $(this).stop().animate({'background-color': '#ffffff'}, 500);
+            //             $(this).find('.text').stop().animate({'color': '#898989'}, 500);
+            //         }
+            // );
+
+            $(window).scrollTop(0);
+            if ('scrollRestoration' in history) {
+                // Back off, browser, I got this...
+                history.scrollRestoration = 'manual';
+            }
+        });
 </script>
 </body>
 </html>
