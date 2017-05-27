@@ -7,25 +7,91 @@
     <link rel="stylesheet" href="../css/swiper/ownSwiper.css">
     <link rel="stylesheet" href="../css/swiper/animate.css">
     <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            height: 70%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
 
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-container-v {
+            background: #eee;
+        }
+
+        .img-ctrl {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        @media screen and (min-height: 481px) {
+            .swiper-wrapper {
+                margin-top: 20px
+            }
+
+            #pagination {
+                bottom: 110px
+            }
+        }
+
+        @media screen and (min-height: 569px) {
+            .swiper-wrapper {
+                margin-top: 40px
+            }
+
+            #pagination {
+                bottom: 120px
+            }
+
+            .swiper-pagination-bullet i {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 15px
+            }
+        }
     </style>
 </head>
 <body>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                img1
+                <img src="../imgs/test/choumei/choumei1.jpg" class="img-ctrl">
             </div>
             <div class="swiper-slide">
-                img2
+                <img src="../imgs/test/choumei/choumei2.jpg" class="img-ctrl">
             </div>
             <div class="swiper-slide">
-                img3
+                <img src="../imgs/test/choumei/shouye_nvsheng_haircare_five.png" class="img-ctrl">
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </div>
 
 
@@ -35,13 +101,7 @@
 
 <script>
     var swiper = new Swiper(".swiper-container",{
-        direction: 'vertical',
-        loop: true,
-        autoplay: 2000,
-        speed: 1000,
-        pagination: ".swiper-pagination",
-        nextButton: ".swiper-button-next",
-        prevButton: ".swiper-button-prev",
+        direction: 'horizontal',
         effect: 'cube',
         grabCursor: true,
         cube: {
