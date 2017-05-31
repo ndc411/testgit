@@ -1,0 +1,77 @@
+
+html, body {
+    position: relative;
+    height: 100%;
+    font-family:HappyZcool, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#333;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/test/choumei/bg.jpg") no-repeat center;
+    background-size: cover;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container-v {
+    /*background: #eee;*/
+}
+
+.swiper-wrapper-bg {
+    background-size: cover;
+}
+
+.slide-ver {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slide-ver1 {
+    background: url("../imgs/test/choumei/shouye_nvsheng_washblow_one.png") no-repeat center;
+    background-size: contain;
+}
+
+.slide-ver2 {
+    background: url("../imgs/test/choumei/shouye_nvsheng_washcutblow_two.png") no-repeat center;
+    background-size: contain;
+}
+.slide-ver3 {
+    background: url("../imgs/test/choumei/shouye_nvsheng_hairperm_three.png") no-repeat center;
+    background-size: contain;
+}
+.slide-ver4 {
+    background: url("../imgs/test/choumei/shouye_nvsheng_hairdye_four.png") no-repeat center;
+    background-size: contain;
+}
+.slide-ver5 {
+    background: url("../imgs/test/choumei/shouye_nvsheng_haircare_five.png") no-repeat center;
+    background-size: contain;
+}
+
+
+@font-face {
+    font-family: HappyZcool;
+    src: url(/fonts/a5d0b7e3-ae01-cbca-18e0-6dc52f15a909/0f5741639b88c7d00784a26b058d3eeed55aa7de.eot);
+    src: url(/fonts/a5d0b7e3-ae01-cbca-18e0-6dc52f15a909/0f5741639b88c7d00784a26b058d3eeed55aa7de.eot?#iefix) format("embedded-opentype"), url(../fonts/woff.woff) format("woff"), url(/fonts/a5d0b7e3-ae01-cbca-18e0-6dc52f15a909/0f5741639b88c7d00784a26b058d3eeed55aa7de.ttf) format("truetype"), url(/fonts/a5d0b7e3-ae01-cbca-18e0-6dc52f15a909/0f5741639b88c7d00784a26b058d3eeed55aa7de.svg#HappyZcool) format("svg");
+    font-style: normal;
+    font-weight: 400
+}

@@ -8,91 +8,23 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="../css/swiper/swiper.css">
     <link rel="stylesheet" href="../css/swiper/animate.css">
-    <!-- Demo styles -->
-    <style>
-    html, body {
-        position: relative;
-        height: 100%;
-    }
-    body {
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color:#000;
-        margin: 0;
-        padding: 0;
-    }
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-        background: url("../imgs/test/choumei/bg.jpg") no-repeat center;
-        background-size: contain;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-    .swiper-container-v {
-        background: #eee;
-    }
-
-    .swiper-wrapper-bg {
-        background: url("../imgs/test/choumei/shouye_nvsheng_bg.png") no-repeat center;
-        background-size: cover;
-    }
-
-    .slide-ver {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-     .slide-ver1 {
-         background: url("../imgs/test/choumei/shouye_nvsheng_washblow_one.png") no-repeat center;
-         background-size: contain;
-     }
-
-    .slide-ver2 {
-        background: url("../imgs/test/choumei/shouye_nvsheng_washcutblow_two.png") no-repeat center;
-        background-size: contain;
-    }
-    .slide-ver3 {
-        background: url("../imgs/test/choumei/shouye_nvsheng_hairperm_three.png") no-repeat center;
-        background-size: contain;
-    }
-    .slide-ver4 {
-        background: url("../imgs/test/choumei/shouye_nvsheng_hairdye_four.png") no-repeat center;
-        background-size: contain;
-    }
-    .slide-ver5 {
-        background: url("../imgs/test/choumei/shouye_nvsheng_haircare_five.png") no-repeat center;
-        background-size: contain;
-    }
-
-    </style>
+    <link rel="stylesheet" href="../css/520.css">
 </head>
 <body>
     <!-- Swiper -->
     <div class="swiper-container swiper-container-h">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="flex-direction: column">
+
+                <div class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s">
+                    献给我最爱的你
+                </div>
+
                 <div class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s">
                     <p class="ani infinite" swiper-animate-effect="swing" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s">
                         <img src="../imgs/test/choumei/superwoman.jpg" style="width: 100px">
                     </p>
                 </div>
-
 
                 <div class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.7s">
                     <p class="ani infinite" swiper-animate-effect="shake" swiper-animate-duration="4.5s" swiper-animate-delay="0.5s">时间会倒流~~~</p>
@@ -125,7 +57,7 @@
         <div class="swiper-pagination swiper-pagination-h"></div>
     </div>
     <div>
-        <audio src="../va/loveNuna.mp3"></audio>
+        <audio src="../va/loveNuna.mp3" autoplay loop controls></audio>
     </div>
     <!-- Swiper JS -->
     <script src="../js/swiper/swiper.min.js"></script>
